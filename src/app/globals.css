@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #191714;
+  --color-paper: #fffceb;
+  --color-editorial-red: #ff2415;
+  --color-editorial-yellow: #ffe100;
+  --color-editorial-green: #005b3c;
+  --color-editorial-blue: #65cada;
+  --color-editorial-orange: #ff6a00;
+  --color-editorial-pink: #f77bc5;
+  --font-sans: Arial, Helvetica, sans-serif;
+  --font-mono: "Courier New", Courier, monospace;
+  --animate-marquee: marquee 24s linear infinite;
+  --animate-letter-dance: letter-dance 1.6s ease-in-out infinite alternate;
+  --animate-greeting-spin: greeting-spin 12s linear infinite;
+}
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+
+  html {
+    @apply scroll-smooth motion-reduce:scroll-auto;
+  }
+
+  body {
+    @apply m-0 bg-paper font-sans text-ink;
+    letter-spacing: 0;
+  }
+
+  a {
+    @apply text-inherit no-underline;
+  }
+
+  :focus-visible {
+    @apply outline-3 outline-offset-4 outline-blue-600;
+  }
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes letter-dance {
+  0% {
+    transform: translateY(0) rotate(-1deg);
+  }
+  50% {
+    transform: translateY(-0.09em) rotate(1.5deg);
+  }
+  100% {
+    transform: translateY(0.035em) rotate(-0.5deg);
+  }
+}
+
+@keyframes greeting-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
