@@ -2,6 +2,8 @@
 
 A multilingual editorial portfolio built with Next.js, React, TypeScript, Tailwind CSS, i18next, ESLint, and Prettier.
 
+Live at [lauratorquato.com](https://lauratorquato.com/).
+
 ## Development
 
 ```bash
@@ -25,4 +27,5 @@ The portfolio copy, experience, and project content live in `src/i18n/resources.
 
 Pushes to `main` are published to GitHub Pages by the deployment workflow. In the
 repository settings, set **Pages > Build and deployment > Source** to **GitHub
-Actions**. The production URL is `https://lauratorquato.github.io/lautorquato/`.
+Actions**. The site is hosted by GitHub Pages and published at the custom domain
+`https://lauratorquato.com/`.
