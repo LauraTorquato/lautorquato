@@ -89,9 +89,9 @@ const sharedJourney = {
 
 const pt: PortfolioCopy = {
   meta: {
-    title: "Laura Torquato · Front-end Developer",
+    title: "Laura Torquato | Desenvolvedora Front-end React e TypeScript",
     description:
-      "Portfólio de Laura Torquato, desenvolvedora front-end especializada em React, Next.js e TypeScript.",
+      "Portfólio de Laura Torquato, desenvolvedora front-end em São Paulo com experiência em React, TypeScript, Next.js, design systems e acessibilidade.",
   },
   nav: ["Sobre", "Trabalho", "Trajetória", "Contato"],
   cover: {
@@ -201,9 +201,9 @@ const pt: PortfolioCopy = {
 const en: PortfolioCopy = {
   ...pt,
   meta: {
-    title: "Laura Torquato · Front-end Developer",
+    title: "Laura Torquato | React and TypeScript Front-end Developer",
     description:
-      "Laura Torquato's portfolio — a React, Next.js and TypeScript front-end developer.",
+      "Laura Torquato's portfolio, a São Paulo-based front-end developer experienced in React, TypeScript, Next.js, design systems and accessibility.",
   },
   nav: ["About", "Work", "Journey", "Contact"],
   cover: {
@@ -312,9 +312,9 @@ const en: PortfolioCopy = {
 const es: PortfolioCopy = {
   ...en,
   meta: {
-    title: "Laura Torquato · Desarrolladora Front-end",
+    title: "Laura Torquato | Desarrolladora Front-end React y TypeScript",
     description:
-      "Portfolio de Laura Torquato, desarrolladora especializada en React, Next.js y TypeScript.",
+      "Portfolio de Laura Torquato, desarrolladora front-end en São Paulo con experiencia en React, TypeScript, Next.js, design systems y accesibilidad.",
   },
   nav: ["Sobre mí", "Trabajo", "Trayectoria", "Contacto"],
   cover: {

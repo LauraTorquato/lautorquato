@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import type { Locale } from "@/i18n/config";
+import { localeSeo } from "@/lib/seo";
 
 const sectionIds = ["about", "work", "journey", "contact"];
 
@@ -67,7 +68,7 @@ export function SiteHeader({
             <Link
               key={item}
               className={`grid size-8 place-items-center rounded-full md:size-10 ${locale === item ? "bg-ink text-paper" : ""}`}
-              href={`/${item}`}
+              href={localeSeo[item].path}
               aria-current={locale === item ? "page" : undefined}
             >
               {item}

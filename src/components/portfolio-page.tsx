@@ -53,9 +53,10 @@ function Portfolio({ locale }: { locale: Locale }) {
             />
             {copy.cover.available}
           </p>
-          <h1
+          <h1 className="sr-only">Laura Torquato — {copy.cover.role}</h1>
+          <div
             className="relative z-[2] mx-auto mb-4 flex w-max max-w-full text-[clamp(80px,29vw,180px)] leading-[.74] font-black tracking-[-.075em] uppercase md:-mb-[1.5vw] md:text-[clamp(110px,20vw,390px)]"
-            aria-label="Laura"
+            aria-hidden="true"
           >
             {Array.from("Laura").map((letter, index) => (
               <span
@@ -67,7 +68,7 @@ function Portfolio({ locale }: { locale: Locale }) {
                 {letter}
               </span>
             ))}
-          </h1>
+          </div>
           <span className="relative z-[3] mr-[1.2vw] mb-6 ml-auto block w-max -rotate-3 rounded-full border border-ink bg-editorial-yellow px-[18px] pt-2.5 pb-2 font-mono text-[13px] font-black tracking-[.15em] uppercase shadow-[5px_5px_0_var(--color-editorial-red)] md:mb-3 md:text-lg">
             Torquato
           </span>
